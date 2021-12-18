@@ -81,7 +81,7 @@ body {
 	color: white;
 }
 
-#lucky_signoff {
+.lucky_signoff {
 	font-family: "Rock Salt", cursive;
 	text-align: end;
 	font-size: 1.2em;
@@ -122,19 +122,29 @@ body {
 }
 
 .end_credits {
-	margin-bottom: 0;
 	width: 100%;
 	box-shadow: 8px 5px 20px rgb(0, 30, 37);
 	background-color: rgb(6, 3, 49);
-	height: 100px;
+	height: auto;
 }
 
 .end_credits li {
+	margin: 10px;
 	display: flex;
-	justify-content: space-around;
-	list-style: none;
+	justify-content: space-evenly;
 }
 
 .end_credits li ul {
+	font-family: "Rock Salt", cursive;
+	font-size: 1em;
+	text-decoration: none;
+	color: white;
+	margin: 0px 20px 0px 20px;
+}
+
+.end_credits li ul a {
+	font-family: "Rock Salt", cursive;
+	font-size: 1em;
+	text-decoration: none;
 	color: white;
 }
