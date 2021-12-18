@@ -65,9 +65,11 @@ body {
 
 .box {
 	transform: translateY(-200px);
-	width: auto;
+	width: 90%;
 	height: auto;
-	margin: 10px 20px 25px 25px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	padding: 20px;
 	border-radius: 10px;
 	text-align: center;
@@ -85,24 +87,54 @@ body {
 	font-size: 1.2em;
 }
 
-.box header {
+.second_header {
 	font-family: "Rock Salt", cursive;
 	padding: 10px;
 	font-size: 1.5em;
 	letter-spacing: 0.02em;
 }
 
-.box p {
+.general_para {
 	padding-top: 10px;
 	font-size: 1.1em;
 	letter-spacing: 0.05em;
 }
 
 .inner_box {
-	margin: 0%;
-	padding: 0;
+	transform: translateY(-200px);
+	width: 25%;
+	height: auto;
+	margin-top: 10px;
+	margin: auto;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	word-spacing: 0.05em;
+	font-family: "Twinkle Star", cursive;
+	line-height: 2em;
+	box-shadow: 8px 5px 20px rgb(0, 30, 37);
+	background-color: rgb(6, 3, 49);
+	color: white;
 }
 
 .inner_box li {
 	list-style: none;
+}
+
+.end_credits {
+	margin-bottom: 0;
+	width: 100%;
+	box-shadow: 8px 5px 20px rgb(0, 30, 37);
+	background-color: rgb(6, 3, 49);
+	height: 100px;
+}
+
+.end_credits li {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.end_credits li ul {
+	color: white;
 }
