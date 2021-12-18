@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+	padding: 0em;
+	margin: 0;
+}
+
+body {
+	background-color: black;
+	background-size: cover;
+}
+
+.container_header {
+	position: sticky;
+	min-height: 550px;
+	display: flex;
+	margin: 10px;
+	flex-direction: column;
+	background-image: url(main_page_cover.webp);
+	background-size: cover;
+	background-position: center bottom;
+	border-radius: 20px;
+}
+
+.nav_bar_top li {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	justify-content: flex-end;
+}
+
+.nav_bar_top li ul {
+	margin: 0.7em;
+	color: white;
+	opacity: 1000%;
+	font-size: 1.2em;
+	font-family: "Readex Pro", sans-serif;
+	font-weight: bold;
+}
+
+.header_text {
+	color: white;
+	padding-left: 1em;
+	padding-top: 2em;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 5em;
+	font-family: "Kaushan Script", cursive;
+}
+
+.main_page_things {
+	margin-top: 100px;
+	display: flex;
+	/* This is a shorthand notation for flex direction and flex wrap property  */
+	flex-flow: row wrap;
+}
+
+.box {
+	width: 35%;
+	height: auto;
+	margin: 30px 10px 25px 25px;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	font-family: "Pangolin", cursive;
+	word-spacing: 0.05em;
+	line-height: 2em;
+	box-shadow: 10px 10px rgb(255, 217, 0);
+	background-color: black;
+	color: white;
+}
+
+.box header {
+	padding: 5px;
+	font-size: 1.5em;
+	letter-spacing: 0.02em;
+}
+
+.box p {
+	font-size: 1.1em;
+}
