@@ -63,6 +63,29 @@ body {
 	align-items: center;
 }
 
+/* Responsiveness kosam */
+
+@media screen and (max-width: 850px) {
+	.nav_bar_top li {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin: 10px;
+		align-items: center;
+	}
+
+	.nav_bar_top li :hover {
+		text-align: center;
+		border-bottom: solid 1px tomato;
+		width: 150px;
+	}
+
+	.nav_bar_top li ul :hover {
+		/* This is added so that extra border is not added */
+		border-bottom: transparent;
+	}
+}
+
 .nav_bar_top li ul {
 	border-bottom: solid 2px rgb(98, 87, 255);
 	margin: 0.7rem;
