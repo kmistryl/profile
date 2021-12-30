@@ -7,7 +7,39 @@
 body {
 	background-color: black;
 	background-size: cover;
-	padding: 10px;
+	margin: 10px;
+}
+
+/* THe menu icon transition */
+
+.menu_icon {
+	cursor: pointer;
+	width: auto;
+	height: auto;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	height: 2px;
+	width: 20px;
+	background-color: white;
+	margin-top: 5px;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.change .bar2 {
+	transform: translate(3px);
+}
+
+.change .bar3 {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 }
 
 .container_header {
@@ -27,7 +59,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 10px;
-	justify-content: flex-end;
+	align-items: center;
 }
 
 .nav_bar_top li ul {
