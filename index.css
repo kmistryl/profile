@@ -1,37 +1,39 @@
 * {
 	box-sizing: border-box;
-	padding: 0em;
+	padding: 0rem;
 	margin: 0;
 }
 
 body {
 	background-color: black;
 	background-size: cover;
+	padding: 10px;
 }
 
 .container_header {
-	min-height: 550px;
+	/* THe whole thing for the top nav bar including the chemistry REdifined and nav bar */
+	height: auto;
 	display: flex;
-	margin: 10px;
+	margin: 10px 10px 5rem 10px;
 	flex-direction: column;
-	background-image: url(main_page_cover.webp);
-	background-size: cover;
-	background-position: 0px -100px;
-	background-repeat: no-repeat;
+	align-items: space-around;
 	border-radius: 20px;
 }
+
+/* THe top nav bar */
 
 .nav_bar_top li {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	margin: 10px;
 	justify-content: flex-end;
 }
 
 .nav_bar_top li ul {
-	margin: 0.7em;
+	margin: 0.7rem;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-family: "Readex Pro", sans-serif;
 	font-weight: bold;
 }
@@ -39,92 +41,75 @@ body {
 .nav_bar_top li ul a {
 	text-decoration: none;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-family: "Readex Pro", sans-serif;
 	font-weight: bold;
 }
 
+/* Header text : "Chemistry Redifined!!" */
+
 .header_text {
 	color: white;
-	padding-left: 0.5em;
-	padding-top: 2em;
-	padding-bottom: 2em;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	align-items: center;
-	font-size: 5em;
+	font-size: 5rem;
 	font-family: "Kaushan Script", cursive;
 }
 
+/* Main Page,  not include the top navigaion bar */
+
 .main_page_things {
-	margin-top: 100px;
+	margin-top: 10px;
 	display: flex;
 	/* This is a shorthand notation for flex direction and flex wrap property  */
 	flex-flow: row wrap;
 }
 
 .box {
-	transform: translateY(-200px);
-	width: 90%;
+	width: auto;
 	height: auto;
 	margin: auto;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	padding: 20px;
 	border-radius: 10px;
 	text-align: center;
-	word-spacing: 0.05em;
+	word-spacing: 0.05rem;
 	font-family: "Twinkle Star", cursive;
-	line-height: 2em;
+	line-height: 2rem;
 	box-shadow: 8px 5px 20px rgb(0, 30, 37);
 	background-color: rgb(6, 3, 49);
 	color: white;
+}
+
+.box li {
+	list-style: none;
 }
 
 .lucky_signoff {
 	font-family: "Rock Salt", cursive;
 	text-align: end;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 }
 
 .second_header {
 	font-family: "Rock Salt", cursive;
 	padding: 10px;
-	font-size: 1.5em;
-	letter-spacing: 0.02em;
+	font-size: 1.5rem;
+	letter-spacing: 0.02rem;
 }
 
 .general_para {
 	padding-top: 10px;
-	font-size: 1.1em;
-	letter-spacing: 0.05em;
+	font-size: 1.1rem;
+	letter-spacing: 0.05rem;
 }
 
-.inner_box {
-	transform: translateY(-200px);
-	width: 25%;
-	height: auto;
-	margin-top: 10px;
-	margin: auto;
-	padding: 20px;
-	border-radius: 10px;
-	text-align: center;
-	word-spacing: 0.05em;
-	font-family: "Twinkle Star", cursive;
-	line-height: 2em;
-	box-shadow: 8px 5px 20px rgb(0, 30, 37);
-	background-color: rgb(6, 3, 49);
-	color: white;
-}
-
-.inner_box li {
-	list-style: none;
-}
+/* This is the CSS code for the end nav page, Do not confuse!!! */
 
 .end_credits {
 	width: 100%;
-	box-shadow: 8px 5px 20px rgb(0, 30, 37);
-	background-color: rgb(6, 3, 49);
 	height: auto;
 }
 
@@ -132,11 +117,12 @@ body {
 	margin: 10px;
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 .end_credits li ul {
 	font-family: "Rock Salt", cursive;
-	font-size: 1em;
+	font-size: 1rem;
 	text-decoration: none;
 	color: white;
 	margin: 0px 20px 0px 20px;
@@ -144,7 +130,7 @@ body {
 
 .end_credits li ul a {
 	font-family: "Rock Salt", cursive;
-	font-size: 1em;
+	font-size: 1rem;
 	text-decoration: none;
 	color: white;
 }
