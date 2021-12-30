@@ -64,7 +64,9 @@ body {
 }
 
 .nav_bar_top li ul {
+	border-bottom: solid 2px rgb(98, 87, 255);
 	margin: 0.7rem;
+	padding-bottom: 8px;
 	color: white;
 	font-size: 1.2rem;
 	font-family: "Readex Pro", sans-serif;
@@ -77,6 +79,15 @@ body {
 	font-size: 1.2rem;
 	font-family: "Readex Pro", sans-serif;
 	font-weight: bold;
+}
+
+.nav_bar_top li :hover {
+	border-bottom: solid 1px tomato;
+}
+
+.nav_bar_top li ul :hover {
+	/* This is added so that extra border is not added */
+	border-bottom: transparent;
 }
 
 /* Header text : "Chemistry Redifined!!" */

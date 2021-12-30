@@ -64,7 +64,9 @@ body {
 }
 
 .nav_bar_top li ul {
+	border-bottom: solid 2px rgb(98, 87, 255);
 	margin: 0.7rem;
+	padding-bottom: 8px;
 	color: white;
 	font-size: 1.2rem;
 	font-family: "Readex Pro", sans-serif;
@@ -77,6 +79,15 @@ body {
 	font-size: 1.2rem;
 	font-family: "Readex Pro", sans-serif;
 	font-weight: bold;
+}
+
+.nav_bar_top li :hover {
+	border-bottom: solid 1px tomato;
+}
+
+.nav_bar_top li ul :hover {
+	/* This is added so that extra border is not added */
+	border-bottom: transparent;
 }
 
 /* Header text : "Chemistry Redifined!!" */
@@ -149,11 +160,13 @@ body {
 .end_credits li {
 	margin: 10px;
 	display: flex;
-	justify-content: space-evenly;
 	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .end_credits li ul {
+	display: flex;
+	justify-content: center;
 	font-family: "Rock Salt", cursive;
 	font-size: 1rem;
 	text-decoration: none;
@@ -166,4 +179,14 @@ body {
 	font-size: 1rem;
 	text-decoration: none;
 	color: white;
+}
+
+/* Scrollbar decorations, super cool actually */
+::-webkit-scrollbar {
+	width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background: linear-gradient(transparent, rgb(128, 0, 0), transparent);
 }
