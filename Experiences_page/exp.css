@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: black;
+}
+
+p {
+	line-height: 50px;
+	margin-top: 100px;
+	text-align: center;
+	font-size: 20px;
+	color: rgb(255, 180, 255);
+}
+
+p a {
+	text-decoration: none;
+	color: rgb(145, 255, 227);
+}

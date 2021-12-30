@@ -58,7 +58,7 @@ body {
 .nav_bar_top li {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: column;
 	margin: 10px;
 	align-items: center;
 }
@@ -166,14 +166,4 @@ body {
 	font-size: 1rem;
 	text-decoration: none;
 	color: white;
-}
-
-/* Scrollbar decorations, super cool actually */
-::-webkit-scrollbar {
-	width: 9px;
-}
-
-::-webkit-scrollbar-thumb {
-	border-radius: 20px;
-	background: linear-gradient(transparent, rgb(128, 0, 0), transparent);
 }

@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<script>
+		<script async>
 			function menu_transition(x){
 				 x.classList.toggle("change");
 			}
 		</script>
+		
+		<!-- Css Styling for different screens -->
+		<link rel="stylesheet" media= "screen and (min-width:800px)" href="index.css" />
+		<link rel="stylesheet" media="screen and (max-width:799px)" href="index_responsive.css">
+
+
+		<!-- Fonts required -->
+
 		<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Readex+Pro:wght@300&family=Righteous&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="index.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&family=Righteous&display=swap"
 			rel="stylesheet"
 		/>
 		<link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+
+		<!-- Default things -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,13 +58,13 @@
 						<a href="#">Home</a>
 					</ul>
 					<ul>
-						<a href="">Experiences</a>
+						<a href="Experiences_page/exp.html">Experiences</a>
 					</ul>
 					<ul>
-						<a href="">Students</a>
+						<a href="Students_Page/stu_page.html">Students</a>
 					</ul>
 					<ul>
-						<a href="">Developer</a>
+						<a href="Developer_page/dev_page.html">Developer</a>
 					</ul>
 				</li>
 			</div>
@@ -99,7 +108,7 @@
 				</ul>
 				<ul><a href="">Experiences</a></ul>
 				<ul><a href="">Students</a></ul>
-				<ul><a href="">Developer</a></ul>
+				<ul><a href="Developer_page/dev_page.html">Developer</a></ul>
 			</li>
 			
 		</div>
