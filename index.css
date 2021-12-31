@@ -29,17 +29,17 @@ body {
 }
 
 .change .bar1 {
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 }
 
 .change .bar2 {
-	transform: translate(3px);
+	background-color: black;
 }
 
 .change .bar3 {
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 }
 
 /* THe whole thing for the top nav bar including the chemistry REdifined and nav bar */
@@ -77,7 +77,6 @@ body {
 	.nav_bar_top li :hover {
 		text-align: center;
 		border-bottom: solid 1px tomato;
-		width: 150px;
 	}
 
 	.nav_bar_top li ul :hover {
@@ -116,11 +115,11 @@ body {
 /* Header text : "Chemistry Redifined!!" */
 
 .header_text {
-	color: white;
+	color: rgb(255, 255, 255);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	font-size: 5rem;
+	font-size: 4rem;
 	font-family: "Kaushan Script", cursive;
 }
 
