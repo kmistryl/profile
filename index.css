@@ -63,7 +63,7 @@ body {
 	align-items: center;
 }
 
-/* Responsiveness kosam */
+/* For Responsiveness */
 
 @media screen and (max-width: 850px) {
 	.nav_bar_top li {
@@ -89,6 +89,7 @@ body {
 	border-bottom: solid 2px rgb(98, 87, 255);
 	margin: 0.7rem;
 	padding-bottom: 8px;
+	letter-spacing: 0.05rem;
 	color: white;
 	font-size: 1.2rem;
 	font-family: "Readex Pro", sans-serif;
@@ -117,10 +118,10 @@ body {
 .header_text {
 	color: rgb(255, 255, 255);
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
 	align-items: center;
-	font-size: 4rem;
-	font-family: "Kaushan Script", cursive;
+	font-size: 5rem;
+	font-family: "Berkshire Swash", cursive;
 }
 
 /* Main Page,  not include the top navigaion bar */
@@ -142,8 +143,9 @@ body {
 	border-radius: 10px;
 	text-align: center;
 	word-spacing: 0.05rem;
-	font-family: "Twinkle Star", cursive;
+	font-family: "Itim", cursive;
 	line-height: 2rem;
+	font-weight: lighter;
 	box-shadow: 8px 5px 20px rgb(0, 30, 37);
 	background-color: rgb(6, 3, 49);
 	color: white;
@@ -187,11 +189,13 @@ body {
 }
 
 .end_credits li ul {
+	border-bottom: 2px solid greenyellow;
 	font-family: "Rock Salt", cursive;
 	font-size: 1rem;
 	text-decoration: none;
 	color: white;
 	margin: 0px 20px 0px 20px;
+	padding-bottom: 5px;
 }
 
 .end_credits li ul a {
@@ -201,6 +205,15 @@ body {
 	color: white;
 }
 
+.end_credits li :hover {
+	border-bottom: solid 1px tomato;
+}
+
+.end_credits li ul :hover {
+	/* This is added so that extra border is not added */
+	border-bottom: transparent;
+}
+
 /* Scrollbar decorations, super cool actually */
 ::-webkit-scrollbar {
 	width: 9px;
@@ -208,5 +221,10 @@ body {
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 20px;
-	background: linear-gradient(transparent, rgb(128, 0, 0), transparent);
+	background: linear-gradient(transparent, rgb(14, 118, 255), transparent);
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 20px;
+	background: linear-gradient(transparent, rgb(14, 118, 255), transparent);
 }
